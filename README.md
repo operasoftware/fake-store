@@ -20,6 +20,8 @@ Simple experiment for integrating [PayPal’s Braintree API](https://developers.
     node index.js
     ```
 
-6. Start a browser on an Android phone, browse to the test server, and click on “Download Opera” to download and install `opera_android_braintree.apk` on the phone. Run the demo from the Opera Beta.
+6. Start a browser on an Android phone, browse to the test server, and click on “Download Opera” to download and install `opera_android_braintree.apk` on the phone. 
 
-    An Opera version with payment request support can be found at `/MerchantPublic/opera_android_braintree.apk`, and can also be downloaded from the test server.
+7. Run the demo using the Opera Beta. Note that you don't have to fill in any real PayPal or credit card credentials. Click on the PayPal icon to use a fake PayPal account instead of a credit card.
+
+An Opera version with payment request support can be found at `/MerchantPublic/opera_android_braintree.apk`, and can also be downloaded from the test server.
