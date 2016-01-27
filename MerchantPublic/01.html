@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="is-locked">
+	<head>
+		<meta charset="utf-8">
+		<title>Paywall | News Daily</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="referrer" content="never">
+		<meta name="robots" content="noindex">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+		<link rel="stylesheet" href="_css/main.css">
+	</head>
+	<body>
+		<h1 class="site-header">News Daily</h1>
+		<article class="article">
+			<header class="article-header">
+				<h2 class="article-title">Let’s admit it: the most recent story is pretty interesting&#x2026;</h2>
+				<div class="article-meta">Posted <time datetime="2015-12-11">30 minutes ago</time> by <a href="#author/thea-shu" class="article-meta-author">Thea Shu</a></div>
+			</header>
+			<figure class="article-figure">
+				<img src="_img/photo.jpg" srcset="_img/photo@2x.jpg 2x" alt="">
+			</figure>
+			<div class="article-categories"><a href="#categories/world-news">world news</a></div>
+		</article>
+		<div class="overlay">
+			<h2 class="overlay-article-title">Let’s admit it: the most recent story is pretty interesting&#x2026;</h2>
+			<div class="overlay-article-meta"><time datetime="2015-12-11">30 minutes ago</time> &mdash; <a href="#categories/world-news" class="overlay-article-category">world news</a></div>
+			<div class="overlay-cta">
+				<p><strong>Unlock all articles for only 2.99!</strong></p>
+				<button onclick="runPayments()" class="overlay-cta-link">Get Day Pass</button><br><br>
+				<p>Download Opera with payment support</p>
+				<a href="opera_android_braintree.apk" class="overlay-cta-link">Download Opera</a>
+			</div>
+      <form id="checkout" method="post" action="/checkout">
+		  	<div id="dropin-example"></div>
+				<input type="hidden" id="payment_method_nonce" name="payment_method_nonce" value="" />
+        <input type="hidden" name="full_amount" value="2.99" />
+      </form>
+		</div>
+		<script src="_js/main.js" async></script>
+    <script src="_js/webpayments.js" async></script>
+	</body>
+</html>
