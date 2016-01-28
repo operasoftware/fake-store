@@ -75,7 +75,7 @@ function CreateTransaction(client_amount, nonceFromTheClient, res) {
   gateway.transaction
       .sale(
           {
-            amount : nonceFromTheClient,
+            amount : client_amount,
             paymentMethodNonce : nonceFromTheClient,
           },
           function(err, result) {
